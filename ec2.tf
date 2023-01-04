@@ -1,7 +1,7 @@
 resource "aws_instance" "cloudprotegida-jenkins-manager" {
   ami                  = data.aws_ami.amazon-linux-2.id
   instance_type        = "t3a.small"
-  key_name             = var.key_name
+  key_name             = aws_key_pair.deployer.key_name
   iam_instance_profile = aws_iam_instance_profile.dev-resources-iam-profile.name 
   subnet_id            = var.subnet_id
   associate_public_ip_address = true
