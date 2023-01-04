@@ -10,14 +10,14 @@ Como boa prática, é aconselhavel regerar o par de chaves...
 Comandos para regerar o par de chaves
 
 Entrar no diretório keys
-´´´shell
+```shell
 cd keys
-´´´
+```
 
 Executar o comando para gerar um novo par de chaves
-´´´shell
+```shell
 ssh-keygen
-´´´
+```
 
 No momento em que for solicitado o nome da chave, digitar da forma que está dentro das aspas: "./jenkins-manager"
 
